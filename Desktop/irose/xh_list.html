@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>鲜花网</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/xh_list.css"/>
+</head>
+<body>
+    <!-- header-->
+    <div class="header_box">
+        <header class="header">
+            <div class="container clearfloat">
+                <div class="h_con lf">
+                    <ul class="clearfloat">
+                        <li class="zhanghu"><a href="#">我的账户</a><i></i></li>
+                        <li><em>|</em></li>
+                        <li><a href="#">补交贷款</a></li>
+                        <li><em>|</em></li>
+                        <li><a href="#">付款方式</a></li>
+                        <li><em>|</em></li>
+                        <li><a href="#">配送查询</a></li>
+                        <li><em>|</em></li>
+                        <li><a href="#">订单查询</a></li>
+                        <li><em>|</em></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="h_user rt">
+                    <a href="login.html">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                </div>
+            </div>
+        </header>
+        <header class="header_love">
+            <div class="container">
+                <a href="xh_list.html" class="rt">查看详情</a>
+                <span class="rt">24小时订购热线<br><b>488-888-8888</b></span>
+            </div>
+        </header>
+        <header class="header_top container clearfloat">
+            <div class="h_logo lf">
+                <a href="index.html" class="link"></a>
+            </div>
+            <div class="h_search lf">
+                <div class="search_box">
+                    <div class="search_text">
+                        <input type="text" name="keywords" class="keywords"/>
+                        <input type="button" value="搜索" class="s_btn"/>
+                    </div>
+                </div>
+                <div class="hot_key">
+                    <ul class="clearfloat">
+                        <li><a href="#" class="current">节日推荐</a></li>
+                        <li><a href="#">爱情鲜花</a></li>
+                        <li><a href="#">生日鲜花</a></li>
+                        <li><a href="#">商业用花</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_btn lf">
+                <a href="#" id="shop_cart"><b></b>我的购物车<i></i></a>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="container clearfloat">
+                <div class="nav lf">
+                    <ul class="clearfloat">
+                        <li><a href="index.html" class="current">首页</a></li>
+                        <li><a href="#">鲜花</a></li>
+                        <li><a href="#">99玫瑰</a></li>
+                        <li><a href="#">高档礼盒</a></li>
+                        <li><a href="#">开业花篮</a></li>
+                        <li><a href="#">节日推荐</a></li>
+                        <li><a href="#">永生花</a></li>
+                    </ul>
+                </div>
+                <div class="navbar_phone rt">
+                    <i></i>488-888-8888
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--内容部分 -->
+    <section>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#">首页</a>
+                <a href="#">鲜花</a>
+            </div>
+            <div class="type">
+                <div class="type_fl">
+                    <dl class="clearfloat">
+                        <dt>按用途</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="zuoyong">
+                                <a href="#" class="current">全部</a>
+                                <a href="#">生日鲜花</a>
+                                <a href="#">爱情鲜花</a>
+                                <a href="#">祝福鲜花</a>
+                                <a href="#">道歉鲜花</a>
+                                <a href="#">商业鲜花</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="clearfloat">
+                        <dt>按对象</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="duixiang">
+                                <a href="#" class="current">全部</a>
+                                <a href="#">送女友</a>
+                                <a href="#">送男友</a>
+                                <a href="#">送朋友</a>
+                                <a href="#">送母亲</a>
+                                <a href="#">送父亲</a>
+                                <a href="#">送领导</a>
+                                <a href="#">送老师</a>
+                                <a href="#">送长辈</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="clearfloat">
+                        <dt>按花材</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="huacai">
+                                <a href="#" class="current">全部</a>
+                                <a href="#">玫瑰</a>
+                                <a href="#">百合</a>
+                                <a href="#">康乃馨</a>
+                                <a href="#">永生花</a>
+                                <a href="#">向日葵</a>
+                                <a href="#">满天星</a>
+                                <a href="#">勿忘我</a>
+                                <a href="#">扶郎</a>
+                                <a href="#">雏菊</a>
+                                <a href="#">红掌</a>
+                                <a href="#">郁金香</a>
+                                <a href="#">马蹄莲</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="clearfloat">
+                        <dt>按颜色</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="color">
+                                <a href="#" class="current">全部</a>
+                                <a href="#">红色</a>
+                                <a href="#">白色</a>
+                                <a href="#">粉色</a>
+                                <a href="#">蓝色</a>
+                                <a href="#">黄色</a>
+                                <a href="#">紫色</a>
+                                <a href="#">彩色</a>
+                                <a href="#">香槟色</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="clearfloat">
+                        <dt>按价格</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="price">
+                                <a href="#" class="current">全部</a>
+                                <a href="#">200元以内</a>
+                                <a href="#">200-300元</a>
+                                <a href="#">300-400元</a>
+                                <a href="#">400-600元</a>
+                                <a href="#">600-800元</a>
+                                <a href="#">800-1000元</a>
+                                <a href="#">1000元以上</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="clearfloat">
+                        <dt>按数量</dt>
+                        <dd>
+                            <div class="option_list clearfloat" id="count">
+                                <a href="#">全部</a>
+                                <a href="#">9枝</a>
+                                <a href="#">11枝</a>
+                                <a href="#">12枝</a>
+                                <a href="#">18枝</a>
+                                <a href="#">19枝</a>
+                                <a href="#">21枝</a>
+                                <a href="#">24枝</a>
+                                <a href="#">29枝</a>
+                                <a href="#">33枝</a>
+                                <a href="#">50枝</a>
+                                <a href="#">66枝</a>
+                                <a href="#" class="current">99枝</a>
+                                <a href="#">101枝</a>
+                                <a href="#">108枝</a>
+                                <a href="#">365枝</a>
+                                <a href="#">999枝</a>
+                                <a href="#">其他枝数</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="type_num">
+                    共有商品<span>39</span>件,当前为:第<span>1</span>件到<span>39</span>件
+                </div>
+            </div>
+            <div class="list">
+                <ul class="clearfloat">
+                    <li>
+                        <a href="buy.html" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_01.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_02.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_03.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_04.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_05.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_06.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_07.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_08.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_09.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_10.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_11.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_12.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                </li>
+                        <li>
+                            <a href="#" class="link">
+                                <dl>
+                                    <dt><img src="images/product/product_13.jpg" alt=""/></dt>
+                                    <dd>
+                                        <p>情定今生 编号:099253</p>
+                                        <span>99枝红玫瑰</span><br/>
+                                        <b>￥758</b>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <dl>
+                                    <dt><img src="images/product/product_14.jpg" alt=""/></dt>
+                                    <dd>
+                                        <p>情定今生 编号:099253</p>
+                                        <span>99枝红玫瑰</span><br/>
+                                        <b>￥758</b>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <dl>
+                                    <dt><img src="images/product/product_15.jpg" alt=""/></dt>
+                                    <dd>
+                                        <p>情定今生 编号:099253</p>
+                                        <span>99枝红玫瑰</span><br/>
+                                        <b>￥758</b>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <dl>
+                                    <dt><img src="images/product/product_16.jpg" alt=""/></dt>
+                                    <dd>
+                                        <p>情定今生 编号:099253</p>
+                                        <span>99枝红玫瑰</span><br/>
+                                        <b>￥758</b>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_17.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_18.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_19.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <dl>
+                                <dt><img src="images/product/product_20.jpg" alt=""/></dt>
+                                <dd>
+                                    <p>情定今生 编号:099253</p>
+                                    <span>99枝红玫瑰</span><br/>
+                                    <b>￥758</b>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 分页导航-->
+            <div class="pages">
+                <a href="" class="disabled">上一页</a>
+                <a href="" class="cur">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">下一页</a>
+            </div>
+        </div>
+    </section>
+    <!-- footer-->
+    <div class="footer_box">
+        <footer class="ft_service">
+            <div class="container">
+                <ul class="clearfloat">
+                    <li  class="free"><i></i>全国3000+地区免费送</li>
+                    <li  class="fast"><i></i>1-3小时急速送达</li>
+                    <li  class="fresh"><i></i>当天制作，新鲜送达</li>
+                    <li  class="gx"><i></i>全年无休，个性定制</li>
+                    <li  class="pay"><i></i>支付宝、微信线上无忧支付</li>
+                </ul>
+            </div>
+        </footer>
+        <footer class="ft_copy">
+            <div class="container">
+                2001-2015达内国际公司(TARENA INTERNATIONALING.)版权所有 京ICP认证08000853号.56
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
